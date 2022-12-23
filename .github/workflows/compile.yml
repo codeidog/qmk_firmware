@@ -11,6 +11,8 @@ jobs:
     container: qmkfm/qmk_cli
 
     steps:
+    - name: test ls
+    - run: ls -la
     - name: compile your unique keymap
       run: qmk compile -kb sofle -km idog
 
