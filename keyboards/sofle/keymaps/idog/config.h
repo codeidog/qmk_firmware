@@ -19,6 +19,7 @@
 #define SPLIT_LAYER_STATE_ENABLE
 #define SPLIT_WPM_ENABLE
 #define SPLIT_LED_STATE_ENABLE
-#define TAPPING_TERM 150
+// Set this in $QMK_HOME/keyboards/sofle/rev1/config.h
+// #define TAPPING_TERM 150
 //#define OLED_TIMEOUT 120000
 //#define OLED_BRIGHTNESS 120
