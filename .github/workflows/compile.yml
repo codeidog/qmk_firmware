@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2.6.0
+    - name: Update submodules
+      run: make git-submodules
     - name: test ls
       run: ls -la
     - name: compile your unique keymap
