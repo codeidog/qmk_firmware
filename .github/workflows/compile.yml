@@ -1,0 +1,16 @@
+name: compile
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    container: qmkfm/qmk_cli
+
+    steps:
+    - name: compile your unique keymap
+      run: qmk compile -kb sofle -km idog
+
