@@ -1,0 +1,21 @@
+name: compile
+
+on:
+ - pull_request
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    container: qmkfm/qmk_cli
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2.6.0
+    - name: Update submodules
+      run: make git-submodules
+    - name: test ls
+      run: ls -la
+    - name: compile your unique keymap
+      run: qmk compile -kb sofle -km idog
+
