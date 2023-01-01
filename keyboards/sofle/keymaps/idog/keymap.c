@@ -94,11 +94,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | Esc  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |  Up  |  END | HOME |      |                    |   7  |  8   |   9  |   0  | F11  | F12  |
+ * |      |      |  Up  |  END | HOME |      |                    |  F11 |  7   |  8   |   9  |  0   |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      | Left | Down | Right|      |      |-------.    ,-------|   4  |  5   |   6  |      |      |      |
+ * |      | Left | Down | Right|      |      |-------.    ,-------|  F12 |  4   |  5   |   6  |      |      |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * | Shift|      |      |      |      |      |-------|    |-------|   1  |  2   |   3  |      |      |      |
+ * | Shift|      |      |      |      |      |-------|    |-------|      |  1   |  2   |   3  |  .   |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | LGUI | RAlt | LCTR | Enter | /SYMBL /       \  FN  \  |      |      |      |      |
  *            |      |      |      |       |/      /         \      \ |      |      |      |      |
@@ -106,10 +106,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_FUNCTION] = LAYOUT(
-  XXXXXXX,   KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,                             KC_F6,  KC_F7,  KC_F8,  KC_F9,    KC_F10,   XXXXXXX,
-  XXXXXXX,  XXXXXXX,  KC_UP,    KC_END,   KC_HOME,  XXXXXXX,                           KC_7,   KC_8,   KC_9,   KC_0,     KC_F11,   KC_F12,
-  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_RGHT,  XXXXXXX,  XXXXXXX,                           KC_4,   KC_5,   KC_6,   XXXXXXX,  XXXXXXX,  XXXXXXX,
-  KC_LSFT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,       XXXXXXX,  KC_1,   KC_2,   KC_3,   XXXXXXX,  XXXXXXX,  XXXXXXX,
+  XXXXXXX,   KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,                             KC_F6,    KC_F7,  KC_F8,  KC_F9,  KC_F10,   XXXXXXX,
+  XXXXXXX,  XXXXXXX,  KC_UP,    KC_END,   KC_HOME,  XXXXXXX,                           KC_F11,   KC_7,   KC_8,   KC_9,   KC_0,     XXXXXXX,
+  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_RGHT,  XXXXXXX,  XXXXXXX,                           KC_F12,   KC_4,   KC_5,   KC_6,   XXXXXXX,  XXXXXXX,
+  KC_LSFT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,       XXXXXXX,  XXXXXXX,  KC_1,   KC_2,   KC_3,   KC_DOT,   XXXXXXX,
                 KC_LGUI, KC_LALT, KC_LCTL, KC_ENTER, KC_SYMBOLS,                          KC_FUNCTION,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX
 ),
 
